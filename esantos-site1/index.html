@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="StarterFiles/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="StarterFiles/css/bootstrap.min.css">
+
+
+  <link rel="stylesheet" href="css/styles.css">
+  <title>Ed Santos Portfolio</title>
+
+  <!--  <script src="https://kit.fontawesome.com/19feb1d7cf.js"></script>-->
+
+</head>
+
+<body>
+  <nav class="es-navbar">
+    <div class="es-brand">Ed<span class="es-brand2">Santos</span></div>
+    <ul class="es-topnav" id="es-navbar-toggle">
+      <li><a class="es-nav-link" href="#about">Home</a></li>
+      <li><a class="es-nav-link" href="#professional">Professional</a></li>
+      <li><a class="es-nav-link" href="#personal">Personal</a></li>
+      <li><a class="es-nav-link" href="#contact">Contact</a></li>
+      <li class="es-dropdownLink"><a onclick="toggleDropdown()" href="javascript:void(0)">&#9776;</a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <div class="about-me" id="about">
+      <div class="headshot-wrapper">
+        <img class="headshot" src="assets/IMG_1707.jpg" alt="Head Shot">
+        <h1>Ed Santos</h1>
+      </div>
+      <div class="headline">
+        <div class="personal-bio">
+          This is my personal bio. I will have lots of super interesting tidbits of info to share in this paragraph, but not great detail. This is my personal bio. I will have lots of super interesting tidbits of info to share in this paragraph, but not great detail. This is my personal bio. I will have lots of super interesting tidbits of info to share in this paragraph, but not great detail.
+        </div>
+        <div class="professional-bio">
+          And here is the professional bio, which should probably have the same look as the personal bio but separated and perhaps with a different background color or image.
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="professional" id="professional">
+    <div class="es-section-header">
+      <div class="es-brand">PROFESSIONAL<span class="es-brand2">BACKGROUND</span></div>
+    </div>
+    <div class="container">
+      <div class="media-object">
+        <div class="icon-left">
+          <img src="assets/graduate2.png" alt="ELS Logo">
+        </div>
+        <div class="blurb-wrapper-right">
+          <h2 class="blurb-header modal-link" data-toggle="modal" data-target=".skills-modal">Education</h2>
+          <div class="blurb-info">
+            <ul class="es-list">
+              <li class="es-list-item">B.S. Computer Science - California State University Stanislaus</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="media-object">
+        <div class="icon-right">
+          <img src="assets/deskStickFigure.jpg" alt="Experience Img">
+        </div>
+        <div class="blurb-wrapper-left">
+          <h2 class="blurb-header">Experience</h2>
+          <div class="blurb-info">
+            <ul class="es-list">
+              <li class="es-list-item modal-link" data-toggle="modal" data-target="#esModal" data-title="Premier Coordination" data-body="EXP_PREM">2018 - 2019: Premier Coordination (Contract)</li>
+              <li class="es-list-item modal-link" data-toggle="modal" data-target="#esModal" data-title="Orchard Supply Hardware" data-body="EXP_OSH">1991 - 2018: Orchard Supply Hardware</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="media-object">
+        <div class="icon-left">
+          <img class="img-blur" src="assets/ScreenCode.JPG" alt="Skills Img" data-toggle="modal" data-target=".skills-modal">
+        </div>
+        <div class="blurb-wrapper-right">
+          <h2 class="blurb-header">Skills</h2>
+          <div class="blurb-info">
+            <ul class="es-list">
+              <li class="es-list-item modal-link" data-toggle="modal" data-target="#esModal" data-title="Programming Languages" data-body="LANGUAGES">Programming Languages</li>
+              <li class="es-list-item modal-link" data-toggle="modal" data-target="#esModal" data-title="Development Platforms and Tools" data-body="TOOLS">Development Platforms and Tools</li>
+              <li class="es-list-item modal-link" data-toggle="modal" data-target="#esModal" data-title="Customer Service" data-body="CSR">Customer Service</li>
+              <li class="es-list-item modal-link" data-toggle="modal" data-target="#esModal" data-title="Design and Documentation" data-body="DESIGN">Design and Documentation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="media-object">
+        <div class="icon-right">
+          <img src="assets/ELS.jpg" alt="Case Studies Img">
+        </div>
+        <div class="blurb-wrapper-left">
+          <h2 class="blurb-header">Case Studies</h2>
+          <div class="blurb-info">
+            <ul class="es-list">
+              <li class="es-list-item modal-link" data-toggle="modal" data-target="#esModal" data-title="Library Inventory System" data-body="PREM">Library Inventory System</li>
+              <li class="es-list-item modal-link" data-toggle="modal" data-target="#esModal" data-title="Retail New Item Spec Sheet" data-body="NISS">Retail New Item Spec Sheet
+              <li>
+              <li class="es-list-item modal-link" data-toggle="modal" data-target="#esModal" data-title="Customer Returns/Adjustments/Exchanges" data-body="RETURNS">Customer Returns/Adjustments/Exchanges
+              <li>
+              <li class="es-list-item modal-link" data-toggle="modal" data-target="#esModal" data-title="Credit Transaction Interface" data-body="CREDIT">Credit Transaction Interface
+              <li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+  </section>
+
+  <div class="modal fade" id="esModal" tabindex="-1" role="dialog" aria-labelledby="esModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="esModalLabel">Title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="portfolio" id="personal">
+    <div class="es-section-header">
+      <div class="es-brand">PERSONAL<span class="es-brand2">INTERESTS</span></div>
+    </div>
+    <div class="container">
+      <div class="section-header">
+        <h1 class="header">Previous Works</h1>
+      </div>
+      <div class="portfolio-wrapper">
+        <div class="portfolio-object">
+          <div class="portfolio-box">
+          </div>
+          <h4>Project</h4>
+          <div class="portfolio-text">
+            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-container" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <h1>Drop us a line</h1>
+      </div>
+      <form action="">
+        <label for="email">*email</label>
+        <div class="form-group">
+          <input class="form-control" type="email" id="email">
+        </div>
+        <label for="name">*name</label>
+        <div class="form-group">
+          <input class="form-control" type="text" id="name">
+        </div>
+        <label for="message">message</label>
+        <div class="form-group">
+          <textarea class="form-control" id="message" rows="6"></textarea>
+        </div>
+        <div class="submit-btn-wrapper">
+          <button class="quote-btn">Submit</button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Prototype Modal -->
+  <div class="modal fade proto-modal-sm" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md">
+      <div class="modal-content">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="//www.youtube.com/embed/GeVJVZ9lMBY" allowfullscreen></iframe>
+        </div>
+        <p>Backside Crooks are sick! Nollie in nollie out! #BOOM</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills Modal -->
+  <div class="modal fade skills-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="false">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content es-modal">
+        <p> Programming Languages<br>
+          Development Platforms and Tools<br>
+          Customer Service<br>
+          Design and Documentation</p>
+      </div>
+    </div>
+  </div>
+
+  <!--  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>-->
+  <!--  <script type="text/javascript" src="main.js"></script>-->
+
+  <!-- jQuery first, then Tether, then Bootstrap JS. -->
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="StarterFiles/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="main.js"></script>
+
+</body>
+
+</html>
